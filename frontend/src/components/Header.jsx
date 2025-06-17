@@ -71,9 +71,13 @@ function Header() {
           <button className="bg-green-500 rounded-b-xl text-white px-4 py-2">
             <span>Say Hello!</span>
           </button>
-          <button className="bg-green-400 rounded-b-xl text-white px-4 py-2">
-            <span>Contact Us!</span>
-          </button>
+          <Link
+            to="/contact"
+            className="bg-green-400 rounded-b-xl text-white px-4 py-2 text-center"
+          >
+            Contact Us!
+          </Link>
+
           <button
             className="ml-2 p-2 rounded-full border-2 border-green-500 text-green-500 hover:bg-green-50 transition"
             onClick={() => setDark((d) => !d)}
@@ -108,9 +112,14 @@ function Header() {
             <button className="bg-green-500 rounded-b-xl text-white px-4 py-2">
               Say Hello!
             </button>
-            <button className="bg-green-400 rounded-b-xl text-white px-4 py-2">
+
+            <Link
+              to="/contact"
+              className="bg-green-400 rounded-b-xl text-white px-4 py-2 text-center"
+            >
               Contact Us!
-            </button>
+            </Link>
+
             <button
               className="p-2 rounded-full border-2 border-green-500 text-green-500 hover:bg-green-50 transition self-end"
               onClick={() => setDark((d) => !d)}
